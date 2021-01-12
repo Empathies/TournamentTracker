@@ -11,7 +11,11 @@ namespace TrackerLibrary.DataAccess
     {
         private const string PrizesFile = "PrizeModels.csv";
 
-        /// TODO - Make the CreatePrize method actually save to the text files
+        public PersonModel CreatePerson(PersonModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Saves a new prize to the database
         /// </summary>
