@@ -34,7 +34,7 @@ namespace TrackerUI
             this.tournamentNameValue = new System.Windows.Forms.TextBox();
             this.tournamentNameLabel = new System.Windows.Forms.Label();
             this.entryFeeValue = new System.Windows.Forms.TextBox();
-            this.entreeFeeLabel = new System.Windows.Forms.Label();
+            this.entryFeeLabel = new System.Windows.Forms.Label();
             this.selectTeamDropdown = new System.Windows.Forms.ComboBox();
             this.selectTeamLabel = new System.Windows.Forms.Label();
             this.createNewTeamLinkLabel = new System.Windows.Forms.LinkLabel();
@@ -86,16 +86,16 @@ namespace TrackerUI
             this.entryFeeValue.TabIndex = 12;
             this.entryFeeValue.Text = "0";
             // 
-            // entreeFeeLabel
+            // entryFeeLabel
             // 
-            this.entreeFeeLabel.AutoSize = true;
-            this.entreeFeeLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.entreeFeeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.entreeFeeLabel.Location = new System.Drawing.Point(14, 194);
-            this.entreeFeeLabel.Name = "entreeFeeLabel";
-            this.entreeFeeLabel.Size = new System.Drawing.Size(125, 37);
-            this.entreeFeeLabel.TabIndex = 11;
-            this.entreeFeeLabel.Text = "Entry Fee";
+            this.entryFeeLabel.AutoSize = true;
+            this.entryFeeLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entryFeeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.entryFeeLabel.Location = new System.Drawing.Point(14, 194);
+            this.entryFeeLabel.Name = "entryFeeLabel";
+            this.entryFeeLabel.Size = new System.Drawing.Size(125, 37);
+            this.entryFeeLabel.TabIndex = 11;
+            this.entryFeeLabel.Text = "Entry Fee";
             // 
             // selectTeamDropdown
             // 
@@ -248,6 +248,7 @@ namespace TrackerUI
             this.createTournamentButton.TabIndex = 24;
             this.createTournamentButton.Text = "Create Tournament";
             this.createTournamentButton.UseVisualStyleBackColor = true;
+            this.createTournamentButton.Click += new System.EventHandler(this.createTournamentButton_Click);
             // 
             // CreateTournamentForm
             // 
@@ -268,7 +269,7 @@ namespace TrackerUI
             this.Controls.Add(this.selectTeamDropdown);
             this.Controls.Add(this.selectTeamLabel);
             this.Controls.Add(this.entryFeeValue);
-            this.Controls.Add(this.entreeFeeLabel);
+            this.Controls.Add(this.entryFeeLabel);
             this.Controls.Add(this.tournamentNameValue);
             this.Controls.Add(this.tournamentNameLabel);
             this.Controls.Add(this.headerLabel);
@@ -288,7 +289,7 @@ namespace TrackerUI
         private System.Windows.Forms.TextBox tournamentNameValue;
         private System.Windows.Forms.Label tournamentNameLabel;
         private System.Windows.Forms.TextBox entryFeeValue;
-        private System.Windows.Forms.Label entreeFeeLabel;
+        private System.Windows.Forms.Label entryFeeLabel;
         private System.Windows.Forms.ComboBox selectTeamDropdown;
         private System.Windows.Forms.Label selectTeamLabel;
         private System.Windows.Forms.LinkLabel createNewTeamLinkLabel;
