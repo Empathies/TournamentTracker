@@ -213,8 +213,7 @@ namespace TrackerLibrary.DataAccess
                             p.Add("@TeamCompetingId", entry.TeamCompeting.Id);
 
                         }
-                        
-                        
+
                         p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                         connection.Execute("dbo.spMatchupEntries_Insert", p, commandType: CommandType.StoredProcedure);
