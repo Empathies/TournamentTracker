@@ -50,6 +50,7 @@ namespace TrackerUI
             // 
             // loadExistingTournamentDropdown
             // 
+            this.loadExistingTournamentDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.loadExistingTournamentDropdown.FormattingEnabled = true;
             this.loadExistingTournamentDropdown.Location = new System.Drawing.Point(82, 175);
             this.loadExistingTournamentDropdown.Name = "loadExistingTournamentDropdown";
@@ -81,6 +82,7 @@ namespace TrackerUI
             this.loadTournamentButton.TabIndex = 21;
             this.loadTournamentButton.Text = "Load Tournament";
             this.loadTournamentButton.UseVisualStyleBackColor = true;
+            this.loadTournamentButton.Click += new System.EventHandler(this.loadTournamentButton_Click);
             // 
             // createTournamentButton
             // 
