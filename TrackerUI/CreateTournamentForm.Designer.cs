@@ -99,6 +99,7 @@ namespace TrackerUI
             // 
             // selectTeamDropdown
             // 
+            this.selectTeamDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectTeamDropdown.FormattingEnabled = true;
             this.selectTeamDropdown.Location = new System.Drawing.Point(21, 291);
             this.selectTeamDropdown.Name = "selectTeamDropdown";
